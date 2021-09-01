@@ -1,0 +1,81 @@
+.home {
+  background-image: linear-gradient(
+      to left,
+      rgba(79, 86, 100, 1),
+      rgba(79, 86, 100, 1),
+      rgba(79, 86, 100, 0.7),
+      rgba(79, 86, 100, 0.3)
+    ),
+    url("../../img/laptop.png");
+  background-position: left top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding-top: 220px;
+  padding-left: 320px;
+  padding-right: 250px;
+
+  .container {
+    display: flex;
+  }
+
+  .home__left {
+    flex: 0 0 55%;
+    position: relative;
+    .home_scroll {
+      position: absolute;
+      bottom: 5%;
+      p {
+        color: white;
+        display: inline;
+        font-size: 1.6rem;
+        margin-right: 20px;
+      }
+
+      img {
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .home__right {
+    color: white;
+    padding-left: 2rem;
+
+    h1 {
+      font-size: 2.3rem;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-family: "consolas", sans-serif;
+      font-weight: 400;
+      color: var(--main-color);
+      margin-top: -5px;
+      margin-bottom: 35px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      width: 100%;
+    }
+
+    button {
+      background: none;
+      color: white;
+      border: 1px solid var(--main-color);
+      margin-top: 100px;
+      padding: 30px 40px;
+      font-size: 1.8rem;
+      transition: all 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+:root {
+  --main-color: #61dafb;
+  --grey-bg: #4f5664;
+  --grey-light: #838996;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  background-color: var(--grey-bg);
+}

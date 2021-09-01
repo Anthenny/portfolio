@@ -1,0 +1,48 @@
+.navbar {
+  width: 100vw;
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding-left: 175px;
+  padding-top: 25px;
+  padding-right: 170px;
+  transition: all 0.2s;
+
+  &.scrolled {
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+    img {
+      height: 70px;
+      width: 70px;
+    }
+
+    .right {
+      color: white;
+
+      ul {
+        display: flex;
+        list-style: none;
+
+        li {
+          font-size: 28px;
+          margin-right: 50px;
+          cursor: pointer;
+
+          span {
+            color: var(--main-color);
+            font-family: "consolas", sans-serif;
+          }
+        }
+      }
+    }
+  }
+}
