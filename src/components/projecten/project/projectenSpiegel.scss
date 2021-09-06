@@ -1,17 +1,32 @@
 .projecten__container-spiegelbeeld {
   display: flex;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 
   .projecten__display {
     display: flex;
     flex-direction: column;
-    img {
-      height: 100%;
-      align-self: center;
+    justify-content: space-between;
 
-      @media only screen and (max-width: 1200px) {
-        max-height: 600px;
-        max-width: 525px;
+    .slider {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+
+      .slide {
+        opacity: 0;
+        transition: 0.5s ease;
+      }
+
+      .image {
+        height: 300px;
+        border-radius: 8px;
+      }
+
+      .slide.active {
+        opacity: 1;
+        transition: 0.5s ease;
+        transform: scale(1.02);
       }
     }
 
@@ -19,8 +34,8 @@
       display: flex;
       justify-content: space-between;
       margin-top: 20px;
-      padding-left: 80px;
-      padding-right: 80px;
+      padding-left: 200px;
+      padding-right: 200px;
       .dot {
         height: 15px;
         width: 15px;
@@ -45,7 +60,6 @@
 
   .projecten__info {
     .projecten__info-header-spiegelbeeld {
-      padding-top: 50px;
       display: flex;
       flex-direction: column;
       text-align: start;
@@ -73,7 +87,7 @@
       font-size: 1.2rem;
       background-color: var(--grey-light);
       border-radius: 8px;
-      padding: 25px 50px 25px 20px;
+      padding: 25px;
       margin-bottom: 20px;
 
       @media only screen and (max-width: 1200px) {
@@ -85,26 +99,8 @@
     .projecten__info-buttons-s {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      .projecten__ul-spiegelbeeld {
-        list-style: none;
-        font-size: 1rem;
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        width: 60%;
-        li {
-          margin-right: 15px;
-          margin-bottom: 15px;
-          padding: 5px 15px;
-          color: white;
-          background-color: var(--grey-light);
-          border-radius: 40px;
-        }
-        @media only screen and (max-width: 1600px) {
-          display: none;
-        }
-      }
+      justify-content: flex-start;
+
       .btn {
         background: none;
         border: 1px solid var(--main-color);
