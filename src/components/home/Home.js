@@ -1,14 +1,17 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./home.scss";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="container">
         <div className="home__left">
           <div className="home_scroll">
             <p>Scroll naar beneden!</p>
-            <img src="./img/arrow-down.png" alt="pijl naar beneden" />
+            <Link to="over-mij" smooth={true} duration={500} spy={true} exact="true">
+              <img src="./img/arrow-down.png" alt="pijl naar beneden" />
+            </Link>
           </div>
         </div>
         <div className="home__right">

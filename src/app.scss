@@ -4,6 +4,8 @@
   --grey-light: #838996;
 }
 
+$bp-largest: 112.5em;
+
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +16,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
   background-color: var(--grey-bg);
+}
+
+.body {
+  max-width: 130rem;
 }

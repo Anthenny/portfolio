@@ -7,11 +7,11 @@
   padding-left: 175px;
   padding-top: 25px;
   padding-right: 170px;
-  transition: all 0.2s;
+  transition: all ease-in 0.2s;
 
   &.scrolled {
     height: 12vh;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 
   .container {
@@ -23,10 +23,20 @@
     img {
       height: 70px;
       width: 70px;
+      cursor: pointer;
     }
 
     .right {
       color: white;
+
+      .mobileIcon {
+        display: none;
+        font-size: 2rem;
+
+        @media only screen and (max-width: 1200px) {
+          display: block;
+        }
+      }
 
       ul {
         display: flex;
@@ -42,7 +52,19 @@
             font-family: "consolas", sans-serif;
           }
         }
+
+        @media only screen and (max-width: 1200px) {
+          display: none;
+        }
       }
     }
+  }
+
+  @media only screen and (max-width: 1800px) {
+    padding: 25px 75px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding: 25px 50px;
   }
 }

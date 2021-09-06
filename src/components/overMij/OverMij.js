@@ -3,7 +3,7 @@ import "./overMij.scss";
 
 const OverMij = () => {
   return (
-    <div className="over-mij">
+    <div className="over-mij" id="over-mij">
       <h1>
         <span>02. </span>Over mij
       </h1>
@@ -74,11 +74,11 @@ const OverMij = () => {
           </div>
         </div>
 
-        <div className="over-mij__icons">
+        {/* <div className="over-mij__icons">
           <img src="./img/insta.png" alt="instagram" />
           <img src="./img/github.png" alt="github" />
           <img src="./img/linked.png" alt="linked in" />
-        </div>
+        </div> */}
       </div>
     </div>
   );

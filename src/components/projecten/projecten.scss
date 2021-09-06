@@ -1,0 +1,241 @@
+.projecten {
+  width: 100%;
+  padding-left: 350px;
+  padding-right: 350px;
+  padding-top: 6%;
+
+  h1 {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: center;
+    span {
+      font-size: 2.3rem;
+      color: var(--main-color);
+      font-family: "consolas", sans-serif;
+    }
+  }
+
+  .projecten__container {
+    display: flex;
+    margin-bottom: 100px;
+
+    .projecten__display {
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 100%;
+        align-self: center;
+
+        @media only screen and (max-width: 1200px) {
+          max-height: 600px;
+          max-width: 525px;
+        }
+      }
+
+      .projecten__dot-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-left: 80px;
+        padding-right: 80px;
+        .dot {
+          height: 15px;
+          width: 15px;
+          background-color: var(--grey-light);
+          border-radius: 50%;
+          cursor: pointer;
+
+          @media only screen and (max-width: 1200px) {
+            margin: 0 40px;
+          }
+        }
+        .active {
+          background-color: #dddddd;
+        }
+        @media only screen and (max-width: 1200px) {
+          padding-left: 130px;
+          padding-right: 130px;
+          align-self: center;
+        }
+      }
+    }
+
+    .projecten__info {
+      .projecten__info-header {
+        padding-top: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+
+        h3 {
+          color: var(--main-color);
+          font-size: 1.3rem;
+          font-weight: 400;
+        }
+
+        h2 {
+          margin-top: -10px;
+          color: white;
+          font-size: 2rem;
+          font-weight: 400;
+        }
+      }
+      .projecten__info-text {
+        color: white;
+        font-size: 1.2rem;
+        background-color: var(--grey-light);
+        border-radius: 8px;
+        padding: 25px 50px 25px 20px;
+        margin-bottom: 20px;
+      }
+      .projecten__info-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .projecten__ul {
+          list-style: none;
+          font-size: 1rem;
+          display: flex;
+          margin-left: 15px;
+          flex-wrap: wrap;
+          width: 60%;
+          li {
+            margin-right: 15px;
+            margin-bottom: 15px;
+            padding: 5px 15px;
+            color: white;
+            background-color: var(--grey-light);
+            border-radius: 40px;
+          }
+
+          @media only screen and (max-width: 1600px) {
+            display: none;
+          }
+        }
+
+        .btn {
+          background: none;
+          border: 1px solid var(--main-color);
+          color: white;
+          height: 75px;
+          width: 210px;
+          font-size: 1.4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          img {
+            height: 35px;
+            width: 35px;
+            margin-left: 20px;
+          }
+        }
+
+        @media only screen and (max-width: 1600px) {
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      flex-direction: column;
+      position: relative;
+    }
+  }
+
+  // Spiegelbeeld
+
+  .projecten__info {
+    .projecten__info-header-spiegelbeeld {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+
+      h3 {
+        color: var(--main-color);
+        font-size: 1.3rem;
+        font-weight: 400;
+      }
+
+      h2 {
+        margin-top: -10px;
+        color: white;
+        font-size: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    .projecten__info-buttons-s {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .projecten__ul-spiegelbeeld {
+        list-style: none;
+        font-size: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        width: 60%;
+        li {
+          margin-right: 15px;
+          margin-bottom: 15px;
+          padding: 5px 15px;
+          color: white;
+          background-color: var(--grey-light);
+          border-radius: 40px;
+        }
+        @media only screen and (max-width: 1600px) {
+          display: none;
+        }
+      }
+      .btn {
+        background: none;
+        border: 1px solid var(--main-color);
+        color: white;
+        height: 75px;
+        width: 210px;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img {
+          height: 35px;
+          width: 35px;
+          margin-left: 20px;
+        }
+      }
+
+      @media only screen and (max-width: 1600px) {
+        justify-content: flex-start;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1800px) {
+    padding-top: 230px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  @media only screen and (max-width: 1441px) {
+    padding-top: 190px;
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding-top: 350px;
+  }
+
+  @media only screen and (max-width: 1180px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
