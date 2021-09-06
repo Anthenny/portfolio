@@ -22,6 +22,10 @@
     display: flex;
     margin-bottom: 100px;
 
+    .hidden {
+      display: none;
+    }
+
     .projecten__display {
       display: flex;
       flex-direction: column;
@@ -82,6 +86,10 @@
           font-size: 2rem;
           font-weight: 400;
         }
+
+        @media only screen and (max-width: 1200px) {
+          text-align: center;
+        }
       }
       .projecten__info-text {
         color: white;
@@ -90,6 +98,11 @@
         border-radius: 8px;
         padding: 25px 50px 25px 20px;
         margin-bottom: 20px;
+
+        @media only screen and (max-width: 1200px) {
+          padding: 15px 20px;
+          margin: 30px 0;
+        }
       }
       .projecten__info-buttons {
         display: flex;
@@ -138,100 +151,27 @@
         @media only screen and (max-width: 1600px) {
           justify-content: flex-end;
         }
+
+        @media only screen and (max-width: 1200px) {
+          justify-content: center;
+        }
       }
     }
 
     @media only screen and (max-width: 1200px) {
       flex-direction: column;
-      position: relative;
     }
   }
-
-  // Spiegelbeeld
-
-  .projecten__info {
-    .projecten__info-header-spiegelbeeld {
-      padding-top: 50px;
-      display: flex;
-      flex-direction: column;
-      text-align: start;
-
-      h3 {
-        color: var(--main-color);
-        font-size: 1.3rem;
-        font-weight: 400;
-      }
-
-      h2 {
-        margin-top: -10px;
-        color: white;
-        font-size: 2rem;
-        font-weight: 400;
-      }
-    }
-
-    .projecten__info-buttons-s {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .projecten__ul-spiegelbeeld {
-        list-style: none;
-        font-size: 1rem;
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        width: 60%;
-        li {
-          margin-right: 15px;
-          margin-bottom: 15px;
-          padding: 5px 15px;
-          color: white;
-          background-color: var(--grey-light);
-          border-radius: 40px;
-        }
-        @media only screen and (max-width: 1600px) {
-          display: none;
-        }
-      }
-      .btn {
-        background: none;
-        border: 1px solid var(--main-color);
-        color: white;
-        height: 75px;
-        width: 210px;
-        font-size: 1.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-
-        img {
-          height: 35px;
-          width: 35px;
-          margin-left: 20px;
-        }
-      }
-
-      @media only screen and (max-width: 1600px) {
-        justify-content: flex-start;
-      }
-    }
-  }
-
   @media only screen and (max-width: 1800px) {
-    padding-top: 230px;
+    margin-top: 230px;
     padding-left: 200px;
     padding-right: 200px;
   }
 
   @media only screen and (max-width: 1441px) {
-    padding-top: 190px;
+    margin-top: 190px;
     padding-left: 150px;
     padding-right: 150px;
-  }
-
-  @media only screen and (max-width: 1200px) {
-    padding-top: 350px;
   }
 
   @media only screen and (max-width: 1180px) {
