@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ecommerceData } from "../sliderData";
-import "./projectenSpiegel.scss";
+import "./ecommerce.scss";
 
 const ProjectenSpiegel = () => {
   const [current, setCurrent] = useState(0);
