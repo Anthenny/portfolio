@@ -15,11 +15,9 @@ function App() {
     <div className="App">
       {isOpen && <MobileNav isOpen={isOpen} toggle={toggle} />}
       {!isOpen && <Navbar toggle={toggle} />}
-      <div className="body">
-        {!isOpen && <Home />}
-        {!isOpen && <OverMij />}
-        {!isOpen && <Projecten />}
-      </div>
+      <Home />
+      <OverMij />
+      <Projecten />
     </div>
   );
 }

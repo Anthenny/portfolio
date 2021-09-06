@@ -27,9 +27,6 @@ const MobileNav = ({ toggle, isOpen }) => {
           >
             Projecten
           </Link>
-          <Link to="contact" smooth={true} duration={500} spy={true} exact="true" onClick={toggle}>
-            Contact
-          </Link>
         </div>
       </div>
     </div>

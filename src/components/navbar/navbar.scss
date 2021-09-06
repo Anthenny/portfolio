@@ -12,6 +12,10 @@
   &.scrolled {
     height: 12vh;
     background-color: rgba(0, 0, 0, 0.3);
+
+    @media only screen and (max-width: 1200px) {
+      height: 10vh;
+    }
   }
 
   .container {
@@ -65,6 +69,6 @@
   }
 
   @media only screen and (max-width: 1200px) {
-    padding: 25px 50px;
+    padding: 15px 50px;
   }
 }
