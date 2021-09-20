@@ -33,3 +33,15 @@ export const gymAppData = [
     image: "./img/gymapp-3.png",
   },
 ];
+
+export const panelData = [
+  {
+    image: "./img/panel-1.png",
+  },
+  {
+    image: "./img/panel-2.png",
+  },
+  {
+    image: "./img/panel-3.png",
+  },
+];

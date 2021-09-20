@@ -38,12 +38,13 @@ const Netflix = () => {
       </div>
       <div className="projecten__info">
         <div className="projecten__info-header">
-          <h3>Featured</h3>
+          <h3>Javascript</h3>
           <h2>Netflix</h2>
         </div>
         <div className="projecten__info-text">
-          Dit is een ecommerce website voor een kleine ondernemer. Op de website heb ik gebruik
-          gemaakt van sessies, beveiligde routes, verificatie met inloggen en stripe.
+          In dit project heb ik een Netflix clone gemaakt. In deze web applicatie heb ik gebruik
+          gemaakt de MERN stack en het MVC architectuur. Daarnaast kan je op de applicatie inloggen,
+          registreren door alle films sliden zodra je bent ingelogd.
         </div>
         <div className="projecten__info-buttons">
           <button className="btn">

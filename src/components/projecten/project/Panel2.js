@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { gymAppData } from "../sliderData";
+import { panelData } from "../sliderData";
 
-const GymApp = () => {
+import "./ecommerce2.scss";
+
+const Panel2 = () => {
   const [current, setCurrent] = useState(0);
 
   const eersteDot = () => {
@@ -15,11 +17,12 @@ const GymApp = () => {
   const derdeDot = () => {
     setCurrent(current !== 2 ? 2 : current);
   };
+
   return (
-    <div className="projecten__container">
+    <div className="projecten__container-n">
       <div className="projecten__display">
         <div className="slider">
-          {gymAppData.map((slide, index) => {
+          {panelData.map((slide, index) => {
             return (
               <div className={index === current ? "slide active" : "slide"} key={index}>
                 {index === current && (
@@ -37,13 +40,14 @@ const GymApp = () => {
       </div>
       <div className="projecten__info">
         <div className="projecten__info-header">
-          <h3>Javascript</h3>
-          <h2>Gym App</h2>
+          <h3>PHP</h3>
+          <h2>Ecommerce</h2>
         </div>
         <div className="projecten__info-text">
-          In dit project heb ik voor mezelf een gym applicatie gemaakt waarin ik mijn workouts en
-          gewicht kan bijhouden. gemaakt met MERN ook heb ik weer gebruik gemaakt van het MVC
-          architectuur. Daarnaast heb ik de API voor deze applicatie ontwikkeld in Postman.
+          In dit project heb ik een fictief bedrijf gemaakt voor een restaurant zodat deze zijn
+          personeel en leveringen kan bijhouden. Op deze website heb ik gebruik gemaakt van OOP php,
+          MySQL en het MVV architectuur.<br></br>
+          Je kan uiteraard alle CRUD functies vinden op de website.
         </div>
         <div className="projecten__info-buttons">
           <button className="btn">
@@ -56,4 +60,4 @@ const GymApp = () => {
   );
 };
 
-export default GymApp;
+export default Panel2;

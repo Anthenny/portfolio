@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { gymAppData } from "../sliderData";
+import { panelData } from "../sliderData";
+import "./ecommerce.scss";
 
-const GymApp = () => {
+const ProjectenSpiegel = () => {
   const [current, setCurrent] = useState(0);
 
   const eersteDot = () => {
@@ -16,10 +17,28 @@ const GymApp = () => {
     setCurrent(current !== 2 ? 2 : current);
   };
   return (
-    <div className="projecten__container">
+    <div className="projecten__container-spiegelbeeld">
+      <div className="projecten__info">
+        <div className="projecten__info-header-spiegelbeeld">
+          <h3>PHP</h3>
+          <h2>Panel</h2>
+        </div>
+        <div className="projecten__info-text">
+          In dit project heb ik een fictief bedrijf gemaakt voor een restaurant zodat deze zijn
+          personeel en leveringen kan bijhouden. Op deze website heb ik gebruik gemaakt van OOP php,
+          MySQL en het MVC architectuur.<br></br>
+          Je kan alle CRUD functies vinden op de website.
+        </div>
+        <div className="projecten__info-buttons-s">
+          <button className="btn">
+            Bekijk op
+            <img src="./img/github.png" alt="github logo" />
+          </button>
+        </div>
+      </div>
       <div className="projecten__display">
         <div className="slider">
-          {gymAppData.map((slide, index) => {
+          {panelData.map((slide, index) => {
             return (
               <div className={index === current ? "slide active" : "slide"} key={index}>
                 {index === current && (
@@ -35,25 +54,8 @@ const GymApp = () => {
           <div className={current === 2 ? "dot active" : "dot"} onClick={derdeDot}></div>
         </div>
       </div>
-      <div className="projecten__info">
-        <div className="projecten__info-header">
-          <h3>Javascript</h3>
-          <h2>Gym App</h2>
-        </div>
-        <div className="projecten__info-text">
-          In dit project heb ik voor mezelf een gym applicatie gemaakt waarin ik mijn workouts en
-          gewicht kan bijhouden. gemaakt met MERN ook heb ik weer gebruik gemaakt van het MVC
-          architectuur. Daarnaast heb ik de API voor deze applicatie ontwikkeld in Postman.
-        </div>
-        <div className="projecten__info-buttons">
-          <button className="btn">
-            Bekijk op
-            <img src="./img/github.png" alt="github logo" />
-          </button>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default GymApp;
+export default ProjectenSpiegel;

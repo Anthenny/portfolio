@@ -3,6 +3,8 @@ import "./projecten.scss";
 import Ecommerce from "./project/Ecommerce";
 import Netflix from "./project/Netflix";
 import GymApp from "./project/GymApp";
+import Panel2 from "./project/Panel2";
+import Panel from "./project/Panel";
 
 const Projecten = () => {
   return (
@@ -15,6 +17,8 @@ const Projecten = () => {
       <Ecommerce />
       <Ecommerce2 />
       <GymApp />
+      <Panel />
+      <Panel2 />
     </div>
   );
 };

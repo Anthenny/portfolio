@@ -44,8 +44,11 @@ const ProductenN = () => {
           <h2>Ecommerce</h2>
         </div>
         <div className="projecten__info-text">
-          Dit is een ecommerce website voor een kleine ondernemer. Op de website heb ik gebruik
-          gemaakt van sessies, beveiligde routes, verificatie met inloggen en stripe.
+          Op deze website heb ik gebruik gemaakt van javascript in combinatie met nodejs/mongoose en
+          het MVC architectuur.<br></br>
+          Daarnaast maak ik in deze applicatie gebruik van sessies, beveiligde routes,
+          authenticatie, een custom admin en klanten dashboard waar de inkomende bestellingen gezien
+          en afgehandeld kunnen worden.
         </div>
         <div className="projecten__info-buttons">
           <button className="btn">
