@@ -43,7 +43,7 @@ const GymApp = () => {
         <div className="projecten__info-text">
           In dit project heb ik voor mezelf een gym applicatie gemaakt waarin ik mijn workouts en
           gewicht kan bijhouden. gemaakt met MERN ook heb ik weer gebruik gemaakt van het MVC
-          architectuur. Daarnaast heb ik de API voor deze applicatie ontwikkeld in Postman.
+          architectuur. Daarnaast heb ik de rest API voor deze applicatie ontwikkeld in Postman.
         </div>
         <div className="projecten__info-buttons">
           <button className="btn">
