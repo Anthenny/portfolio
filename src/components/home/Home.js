@@ -16,15 +16,13 @@ const Home = () => {
         </div>
         <div className="home__right">
           <h1>Anthenny de Hoon</h1>
-          <h3>Software Developer</h3>
+          <h1 className="h3">Software Developer</h1>
 
           <p>
-            Ik ben een software developer wonend in de omgeving van Rotterdam. Ik hou mijzelf vooral
-            bezig met full stack development en haal me voldoening uit het leren van nieuwe dingen
-            en het leveren van goede producten.
+            Ik ben een software developer woonachtig in de omgeving van Rotterdam. mijn interesses
+            liggen voornamelijk bij full stack development. Ik haal veel voldoening uit het
+            verbreden van mijn kennis en het leveren van goede projecten.
           </p>
-
-          <button>Download mijn CV</button>
         </div>
       </div>
     </div>

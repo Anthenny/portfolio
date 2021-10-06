@@ -47,10 +47,12 @@ const Netflix = () => {
           registreren door alle films sliden zodra je bent ingelogd.
         </div>
         <div className="projecten__info-buttons">
-          <button className="btn">
-            Bekijk op
-            <img src="./img/github.png" alt="github logo" />
-          </button>
+          <a href="https://github.com/Anthenny/mernnetflix">
+            <button className="btn">
+              Bekijk op
+              <img src="./img/github.png" alt="github logo" />
+            </button>
+          </a>
         </div>
       </div>
     </div>

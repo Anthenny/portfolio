@@ -12,12 +12,11 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  padding-top: 220px;
-  padding-left: 350px;
-  padding-right: 350px;
+  padding: 220px 350px;
 
   .container {
     display: flex;
+    margin-top: 80px;
   }
 
   .home__left {
@@ -62,9 +61,14 @@
       @media only screen and (max-width: 1401px) {
         font-size: 2.1rem;
       }
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+        text-align: start;
+      }
     }
 
-    h3 {
+    .h3 {
       font-size: 1.8rem;
       font-family: "consolas", sans-serif;
       font-weight: 400;
@@ -74,6 +78,12 @@
 
       @media only screen and (max-width: 1401px) {
         font-size: 1.6rem;
+      }
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+
+        text-align: start;
       }
     }
 
@@ -86,33 +96,16 @@
       }
     }
 
-    button {
-      background: none;
-      color: white;
-      border: 1px solid var(--main-color);
-      margin-top: 100px;
-      padding: 30px 40px;
-      font-size: 1.8rem;
-      transition: all 0.2s;
-      cursor: pointer;
-
-      &:hover {
-        transform: scale(1.02);
-      }
-
-      @media only screen and (max-width: 1401px) {
-        font-size: 1.6rem;
-        padding: 25px 30px;
-        margin-top: 50px;
-      }
-    }
-
     @media only screen and (max-width: 940px) {
       display: flex;
       flex-direction: column;
-      width: 80%;
+      width: 100%;
       justify-content: center;
       align-items: center;
+    }
+
+    @media only screen and (max-width: 700px) {
+      width: 100%;
     }
   }
 

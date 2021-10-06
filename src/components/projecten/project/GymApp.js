@@ -46,10 +46,12 @@ const GymApp = () => {
           architectuur. Daarnaast heb ik de rest API voor deze applicatie ontwikkeld in Postman.
         </div>
         <div className="projecten__info-buttons">
-          <button className="btn">
-            Bekijk op
-            <img src="./img/github.png" alt="github logo" />
-          </button>
+          <a href="https://github.com/Anthenny/GymAppv2">
+            <button className="btn">
+              Bekijk op
+              <img src="./img/github.png" alt="github logo" />
+            </button>
+          </a>
         </div>
       </div>
     </div>

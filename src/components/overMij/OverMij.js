@@ -10,14 +10,15 @@ const OverMij = () => {
       <div className="over-mij__container">
         <div className="over-mij__info">
           <p>
-            Ik ben een student die tijdens corona een switch heeft gemaakt van koken naar
-            programmeren. Het is als een <span>droom die uitkomt.</span> En ik kan niet wachten tot
-            ik van mijn hobby mijn werk kan maken.
+            Tijdens de pandemie heb ik de switch gemaakt van gespecialiseerd kok naar student
+            software developer. Coderen was vroeger een hobby en nu ik de kans heb om te doen wat ik
+            echt leuk vind voelt het als een <span>droom die uitkomt.</span>
           </p>
           <br />
           <p>
-            Ik ben gewend om hard te werken, ik kan goed in een team werken en vind het super leuk
-            om dingen bij te leren en mijzelf te verbeteren.
+            Omdat ik al vanaf mijn 17e al aan het koken ben kan ik goed in een team werken.
+            Daarnaast kan ik niet wachten om soft/hard skills te leren van mensen die veel meer
+            ervaring als mij hebben.
           </p>
         </div>
         <div className="over-mij__foto">

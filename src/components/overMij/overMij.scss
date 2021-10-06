@@ -160,10 +160,22 @@
   }
 
   @media only screen and (max-width: 700px) {
-    margin-bottom: 240px;
+    margin-bottom: 300px;
   }
 
-  @media only screen and (max-width: 570px) {
-    margin-bottom: 350px;
+  @media only screen and (max-width: 560px) {
+    margin-bottom: 400px;
   }
+
+  @media only screen and (max-width: 470px) {
+    margin-bottom: 500px;
+  }
+
+  @media only screen and (max-width: 430px) {
+    margin-bottom: 650px;
+  }
+
+  // @media only screen and (max-width: 570px) {
+  //   margin-bottom: 350px;
+  // }
 }

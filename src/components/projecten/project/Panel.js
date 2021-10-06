@@ -30,10 +30,12 @@ const ProjectenSpiegel = () => {
           Je kan alle CRUD functies vinden op de website.
         </div>
         <div className="projecten__info-buttons-s">
-          <button className="btn">
-            Bekijk op
-            <img src="./img/github.png" alt="github logo" />
-          </button>
+          <a href="https://github.com/Anthenny/Panel">
+            <button className="btn">
+              Bekijk op
+              <img src="./img/github.png" alt="github logo" />
+            </button>
+          </a>
         </div>
       </div>
       <div className="projecten__display">
